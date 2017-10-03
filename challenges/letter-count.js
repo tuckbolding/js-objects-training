@@ -31,3 +31,35 @@
 */
 
 // YOUR CODE HERE
+
+// count occurences 
+var string = "Apple";
+
+
+function letterCount() {
+  var count = {};
+//split the input into an array with each letter
+  var wordArray = string.split("");
+//check each letter in the array if equals another, and if so add to the counter
+  wordArray.forEach(function countletters(value) {
+    if(!letterCount[value]) {
+      letterCount[value] = 1;
+    } else {
+      letterCount[value] += 1;
+    }
+  return count;
+    }
+  }
+
+}
+
+console.log(letterCount(string));
+
+
+
+
+
+
+
+
+
