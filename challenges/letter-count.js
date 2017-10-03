@@ -33,30 +33,23 @@
 // YOUR CODE HERE
 
 // count occurences 
-var string = "Apple";
-
-
-function letterCount() {
+function letterCount(string) {
+  
   var count = {};
 //split the input into an array with each letter
   var wordArray = string.split("");
 //check each letter in the array if equals another, and if so add to the counter
   wordArray.forEach(function countletters(value) {
-    if(!letterCount[value]) {
-      letterCount[value] = 1;
+    if(!count[value]) {
+      count[value] = 1;
     } else {
-      letterCount[value] += 1;
+      count[value] += 1;
     }
-  return count;
-    }
-  }
-
+  })
+      return (count);
 }
 
-console.log(letterCount(string));
-
-
-
+console.log(letterCount("Apple"));
 
 
 
