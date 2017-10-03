@@ -34,3 +34,46 @@
 */
 
 // YOUR CODE HERE
+
+/*
+function daysUntilDate(todaysDate,birthdate) {
+    
+
+    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
+    var todaysDate = new Date();
+    var birthdate = new Date(2008,01,22);
+//subtract the current Date from the Birthday
+    var diffDays = Math.round(Math.abs((todaysDate.getTime() - birthdate.getTime())/(oneDay)));
+*/
+
+
+function daysUntilDate(dateIn) {
+
+  var now = new Date();
+  console.log(dateIn);
+  // var monthIn = (parseInt(dateIn[0] + dateIn[1]) + 1);
+  // var daysIn = dateIn[3] + dateIn[4];
+  // var yearIn = dateIn[6] + dateIn[7] + dateIn[8] + dateIn[9];
+  // console.log("birthday is " + dateIn);
+  //var dayInDate = new Date(yearIn, monthIn, daysIn);
+  var dayInDate = new Date(dateIn);
+
+  var daysUntilDate = dayInDate.getTime() - now.getTime();
+  daysUntilDate =Math.ceil(daysUntilDate / 1000 / 60/ 60/24);
+  console.log(daysUntilDate);
+  return (daysUntilDate);
+
+}
+
+daysUntilDate("10/03/2017")
+function helper (dob_elem) {
+  var nextDob = 
+  return (dob_elem.name + "'s birthday is in " + 
+}
+
+function birthdayReminder(dob_array){
+
+  return don_array.map(helper)
+}
+
+
